@@ -1,11 +1,21 @@
 ﻿// FOR цикл
-string Method4(int count, string text)
+//string Method4(int count, string text)
+//{
+   //int i = 0;
+    //string result = String.Empty;
+    //for (int i = 0; i < count; i++)
+    //{
+    //    result = result + text;
+    //}
+    //return result;
+//}
+
+// Цикл в цикле (выводим таблицу умножения)
+for (int i = 2; i<=10; i++)
 {
-    int i = 0;
-    string result = String.Empty;
-    for (int i = 0; i < count; i++)
+    for (int j = 2; j <= 10 ; j++)
     {
-        result = result + text;
+        Console.WriteLine($"{i} x {j} = {i * j}");
     }
-    return result;
+    Console.WriteLine();
 }
